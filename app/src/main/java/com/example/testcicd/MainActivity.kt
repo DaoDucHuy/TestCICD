@@ -2,6 +2,7 @@ package com.example.testcicd
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -13,8 +14,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initView() {
-        var textView: TextView = findViewById(R.id.txtCICD)
+        val textView: TextView = findViewById(R.id.txtCICD)
+        val btnCICD: Button = findViewById(R.id.btnChange)
 
         textView.setText("CICD")
+
+        btnCICD.setOnClickListener {
+            textView.text = "Hello World!"
+        }
     }
 }
