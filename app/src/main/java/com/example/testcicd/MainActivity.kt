@@ -22,5 +22,7 @@ class MainActivity : AppCompatActivity() {
         btnCICD.setOnClickListener {
             textView.text = "Hello World!"
         }
+
+        //test CICD
     }
 }
